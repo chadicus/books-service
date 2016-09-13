@@ -19,5 +19,22 @@
     "require-dev": {
         "chadicus/coding-standard": "^1.1",
         "satooshi/php-coveralls": "^1.0"
-    }
+    },
+    "extra": {
+        "routes": [
+            {
+                "method": "GET",
+                "pattern": "/books",
+                "callback": "Chadicus\\Books\\BooksController:index"
+            },
+            {
+                "method": "GET",
+                "pattern": "/books/{id}",
+                "callback": "Chadicus\\Books\\BooksController:get"
+            }
+        ]
+    },
+	"autoload": {
+		"psr-4": {"Chadicus\\Books\\": "src"}
+	}
 }

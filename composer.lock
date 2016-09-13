@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cf90b2722d4a06e56410fe377d8e7fbd",
-    "content-hash": "59851cb1f41de7ad97e310df104bf3a2",
+    "hash": "da19a9d0e5d132758d916c574bb0e405",
+    "content-hash": "3507d24c297d2dfb2172cd150a46facb",
     "packages": [
         {
             "name": "chadicus/books-repository",

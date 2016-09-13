@@ -1,8 +1,8 @@
 <?php
 
-namespace Chadicus;
+namespace Chadicus\Books;
 
-use Chadicus\Books;
+use Chadicus\Books\BookCriteria;
 use DominionEnterprises\Util\Arrays;
 use Interop\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -24,7 +24,7 @@ final class BooksController
         $limit = Arrays::get($queryParams, 'limit', 5);
         $offset = Arrays::get($queryParams, 'offset', 0);
 
-        $books = $this->repository->findAll(new Books\BookCriteria());
+        $books = $this->repository->findAll(new BookCriteria());
         $total = count($books);
         $result = [
             'offset' => $offset,
