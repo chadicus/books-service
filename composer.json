@@ -1,0 +1,23 @@
+{
+    "name": "chadicus/books-service",
+    "description": "Project for testing micro service framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chad Gray",
+            "email": "chadwickgray@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "zendframework/zend-diactoros": "^1.3",
+        "container-interop/container-interop": "^1.1",
+        "chadicus/books-repository": "0.1.0",
+        "dominionenterprises/util-arrays": "^2.0"
+    },
+    "require-dev": {
+        "chadicus/coding-standard": "^1.1",
+        "satooshi/php-coveralls": "^1.0"
+    }
+}
