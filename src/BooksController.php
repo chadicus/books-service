@@ -26,7 +26,7 @@ final class BooksController
     public function __construct(ContainerInterface $container)
     {
         $this->repository = $container->get('books-respository');
-        if (!is_a('\\Chadicus\\Books\\BooksRepositoryInterface', $this->repository)) {
+        if (!is_a($this->repository, '\\Chadicus\\Books\\BookRepositoryInterface')) {
             throw new \InvalidArgumentException('BookRepositoryInterface not found in $contrainer');
         }
     }
